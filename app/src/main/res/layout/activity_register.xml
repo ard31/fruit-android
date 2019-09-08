@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".ui.activity.auth.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:text="Daftarkan diri Anda"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/bg_rectangle"
+                android:hint="Name"
+                android:inputType="textEmailAddress"
+                android:textColor="#055da5"
+                android:textColorHint="@color/color_grey"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/bg_rectangle"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#055da5"
+                android:textColorHint="@color/color_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtTelpon"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/bg_rectangle"
+                android:hint="No Handphone"
+                android:inputType="phone"
+                android:textColor="#055da5"
+                android:textColorHint="@color/color_grey"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/text_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginRight="36dp"
+                        android:background="@drawable/bg_rectangle"
+                        android:gravity="center_vertical"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="#055da5"
+                        android:textColorHint="@color/color_grey"
+                        android:textSize="16sp"
+                        app:drawable_hide="@drawable/eye_off"
+                        app:drawable_show="@drawable/eye_on" />
+
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah Anda memiliki akun?" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login disini"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

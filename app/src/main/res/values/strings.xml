@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AloDokter</string>
+
+    <string name="txt_splash_screen">ALODOKTER</string>
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+
+</resources>
